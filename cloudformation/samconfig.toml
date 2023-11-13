@@ -1,0 +1,11 @@
+version = 0.1
+[default.deploy.parameters]
+stack_name = "dev-portal"
+resolve_s3 = true
+s3_prefix = "dev-portal"
+region = "us-east-1"
+profile = "AdministratorAccess-784014097724"
+confirm_changeset = true
+capabilities = "CAPABILITY_NAMED_IAM"
+parameter_overrides = "ArtifactsS3BucketName=\"catalogiq-dev-portal-artifacts\" DevPortalSiteS3BucketName=\"catalogiq-dev-portal-static-assets\" DevPortalCustomersTableName=\"DevPortalCustomers\" DevPortalPreLoginAccountsTableName=\"DevPortalPreLoginAccounts\" DevPortalAdminEmail=\"josh@catalogiq.app\" DevPortalFeedbackTableName=\"DevPortalFeedback\" StaticAssetRebuildToken=\"defaultRebuildToken\" EdgeLambdaRebuildToken=\"defaultRebuildToken\" StaticAssetRebuildMode=\"\" CognitoIdentityPoolName=\"DevPortalIdentityPool\" CognitoDomainNameOrPrefix=\"catalogiq\" CustomDomainName=\"\" CustomDomainNameAcmCertArn=\"\" UseRoute53Nameservers=\"false\" DevelopmentMode=\"false\" LocalDevelopmentMode=\"false\" AccountRegistrationMode=\"open\""
+image_repositories = []
